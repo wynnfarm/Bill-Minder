@@ -1,7 +1,18 @@
-<div class="main d-flex">
-  <div class="col-12">
-{{#bills-display-box}}
-  {{bill-box}}
-{{/bills-display-box}}
-</div>
+<div class="d-flex">
+  <div class="flex-row">
+    <div class="col-md-6">
+          {{#bills-display-box}}
+            {{#each model as |template|}}
+              {{bill-box template=template}}
+            {{/each}}
+          {{/bills-display-box}}
+        </div>
+          <div class="col-md-6">
+        {{#bills-display-box}}
+          {{#each model as |template|}}
+            {{bill-box template=template}}
+          {{/each}}
+        {{/bills-display-box}}
+        </div>
+  </div>
 </div>
