@@ -1,0 +1,39 @@
+/* Style */
+
+.bigone {
+  background: lightgrey;
+}
+
+.header {
+  background: green;
+}
+
+.mybar {
+  background: pink;
+}
+
+.footer {
+  background: cyan;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f7f7f9;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+
+/* Logic */
+
+.bigone {
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 0;
+}
+
+.scrolly {
+  overflow-y: auto;
+}
